@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  padding: 5rem 3rem;
+  background-color: $color-primary-light;
+
+  &__content {
+    padding: 0 4rem 0 0;
+    letter-spacing: 2px;
+
+    & > * {
+      padding: 0 0 2rem 0;
+    }
+  }
+}
+
+.my-image {
+  width: 35rem;
+  height: 50rem;
+  border-radius: 10px;
+  box-shadow: 3rem 3rem 6rem $box-shadow-2;
+
+  &__container {
+    padding: 0 3rem 0 0;
+  }
+}
+
+//QUALIFICATIONS
+
+.qualifications {
+  padding: 5rem 3rem 7rem 3rem;
+}
+
+//EXTRA
+
+.extra {
+  background-color: $color-primary-light;
+}
+
+.hobby__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hobby {
+  width: 90%;
+
+  &__img {
+    width: 90%;
+  }
+}
