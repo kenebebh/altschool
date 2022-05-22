@@ -71,6 +71,7 @@ body {
     animation: moveInRight 1s ease-out; }
 
 .heading-secondary {
+  font-family: "Noto Serif", serif;
   text-transform: uppercase;
   font-size: 2rem;
   display: block;
@@ -78,17 +79,32 @@ body {
   text-align: center;
   color: #333; }
   .heading-secondary__green {
-    color: #28b485; }
+    color: #28b485;
+    font-size: 2.3rem; }
+  .heading-secondary__white {
+    color: #fff;
+    font-size: 2.3rem; }
 
 .about {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5rem 3rem;
   background-color: #7ed56f; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      flex-direction: column; } }
   .about__content {
-    padding: 0 4rem 0 0;
+    padding: 3rem 4rem 0 0;
     letter-spacing: 2px; }
     .about__content > * {
       padding: 0 0 2rem 0; }
+    @media only screen and (max-width: 30em) {
+      .about__content {
+        padding: 3rem 0 0 0; } }
+
+.goals {
+  padding: 0 0 0 1.5rem; }
 
 .my-image {
   width: 35rem;
@@ -99,25 +115,149 @@ body {
     padding: 0 3rem 0 0; }
 
 .qualifications {
-  padding: 5rem 3rem 7rem 3rem; }
+  padding: 3rem 3rem 7rem 3rem; }
 
 .extra {
-  background-color: #7ed56f; }
+  background-color: #7ed56f;
+  padding: 2rem 3rem 8rem; }
 
 .hobby__container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 2rem 0 0 0; }
 
 .hobby {
-  width: 90%; }
+  width: 90%;
+  background-color: #2998ff28;
+  box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.308); }
+  .hobby:not(:last-child) {
+    margin-right: 3rem; }
   .hobby__img {
-    width: 90%; }
+    width: 100%;
+    height: 20rem;
+    max-height: 20rem; }
+  .hobby__text {
+    padding: 1rem 1rem 2rem;
+    text-align: center; }
+  @media only screen and (max-width: 65em) {
+    .hobby {
+      flex-wrap: wrap;
+      max-width: 30rem; }
+      .hobby:not(:last-child) {
+        margin: 0 0 4rem 0; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw; }
+
+.form__list {
+  list-style-type: none;
+  padding: 0; }
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem;
+  margin: 0 auto;
+  width: 50rem;
+  background-color: #7ed56f;
+  border-radius: 20px;
+  box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.2); }
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.input {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 0 1rem 1rem;
+  border: 1px solid #5643fa;
+  border-radius: 3px;
+  width: 300px;
+  height: 4rem; }
+  .input:active, .input:focus {
+    border: 1px solid #5643fa;
+    outline: none; }
+
+.same-style {
+  border: 1px solid #5643fa;
+  padding: 1rem 0 1rem 1rem;
+  border-radius: 3px;
+  background-color: white;
+  color: grey;
+  font-size: 1.7rem; }
+
+#gender {
+  color: grey;
+  font-size: 1.4rem;
+  border: 0.2px solid #999;
+  border-radius: 3px;
+  background-color: white;
+  padding: 0.4rem 0; }
+  #gender:active, #gender:focus {
+    border: 1px solid #5643fa;
+    outline: none; }
+
+.textarea {
+  height: 12rem; }
+
+#submit {
+  width: 30rem;
+  height: 4rem;
+  background-color: #28b485;
+  color: rgba(255, 255, 255, 0.897);
+  font-size: 2rem;
+  border-radius: 3px;
+  border: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+#submit:hover {
+  font-size: 2.1rem; }
 
 .intro {
   display: flex;
   place-content: center;
   position: relative;
   height: 90vh; }
+
+a {
+  font-family: "Noto Serif", serif; }
+
+.register-container {
+  border: 1px solid #ffb900; }
+
+.register__input {
+  border: 1px solid #ffb900; }
+
+#register-submit {
+  width: 30rem;
+  height: 4rem;
+  background-color: #ffb900;
+  color: rgba(255, 255, 255, 0.897);
+  font-size: 2rem;
+  border-radius: 3px;
+  border: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin-top: 4rem; }
+  #register-submit:hover {
+    font-size: 2.1rem; }
 
 .navigation {
   background-color: #7ed56f;
@@ -144,6 +284,7 @@ body {
     border-bottom: 2px solid rgba(87, 30, 30, 0.521); }
 
 .text-box__content {
+  font-family: "Noto Serif", serif;
   font-size: 3rem;
   background-image: linear-gradient(to right, #2998ff, #5643fa);
   -webkit-background-clip: text;
@@ -152,3 +293,6 @@ body {
   transition: all 1s; }
   .text-box__content:hover {
     background-image: linear-gradient(to right bottom, #5643fa, #2998ff); }
+  @media only screen and (max-width: 30em) {
+    .text-box__content {
+      display: none; } }
