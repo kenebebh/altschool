@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif:ital@1&family=Smooch&display=swap" rel="stylesheet">
 </head>
 <body>
-    Login here
+    <nav class="navigation">
+        
+        <div class="text-box">
+            <h2 class="text-box__content">Welcome!!</h2>
+        </div>
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="contact.html" class="navigation__link" target="_blank">Contact</a></li>
+            <li class="navigation__item"><a href="register.html" class="navigation__link" target="_blank">Register</a></li>
+            <li class="navigation__item"><a href="calculator.html" class="navigation__link" target="_blank">Calculator</a></li>
+            <li class="navigation__item"><a href="index.html" class="navigation__link" target="_blank">Home</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container">
+    <form action="#" method="post" class="contactForm" name="contactForm">
+        <ul class="details">
+            <li class="form__list">
+                <label for="username"></label>
+                <input type="text" class="input" id="username" name="username" placeholder="Username" value="" required />
+            </li>
+           
+            <li class="form__list">
+                <label for="password"></label>
+                <input type="password" class="input" id="password" name="password" placeholder="Password" value="" required />
+            </li>
+
+            <li class="form__list">
+                <input type="submit" id="submit" name="submit" alt="submit" value="Sign in" />
+            </li>
+        </ul>
+    </form>
+</div>
+</main>
 </body>
 </html>

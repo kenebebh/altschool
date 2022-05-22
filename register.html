@@ -4,9 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register here!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif:ital@1&family=Smooch&display=swap" rel="stylesheet">
 </head>
 <body>
-    Register here
+    <nav class="navigation">
+        
+        <div class="text-box">
+            <h2 class="text-box__content">Welcome!!</h2>
+        </div>
+        <ul class="navigation__list">
+            <li class="navigation__item"><a href="contact.html" class="navigation__link" target="_blank">Contact</a></li>
+            <li class="navigation__item"><a href="login.html" class="navigation__link" target="_blank">Login</a></li>
+            <li class="navigation__item"><a href="calculator.html" class="navigation__link" target="_blank">Calculator</a></li>
+            <li class="navigation__item"><a href="index.html" class="navigation__link" target="_blank">Home</a></li>
+           
+        </ul>
+    </nav>
+
+    <main>
+        <div class="form-container register-container">
+    <form action="#" method="post" class="contactForm" name="contactForm">
+        <ul class="details">
+            <li class="form__list">
+                <label for="firstName"></label>
+                <input type="text" class="input register__input" id="firstName" name="firstname" placeholder="First name" value="" required />
+            </li>
+
+            <li class="form__list">
+                <label for="lastName"></label>
+                <input type="text" class="input register__input" id="lastName" name="firstname" placeholder="Last name" value="" required />
+            </li>
+
+            <li class="form__list">
+                <label for="phone"></label>
+                <input type="tel" class="input register__input" id="phone" name="phone" placeholder="Phone no" value="" required />
+            </li>
+
+            <li class="same-style form__list register__input">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="hidden">Prefer not to say</option>
+                <option value="trans">Transgender</option>
+                </select>
+            </li>
+
+            <li class="form__list">
+                <label for="country"></label>
+                <input type="text" class="input register__input" id="country" name="country" placeholder="Country" value="" required />
+            </li>
+
+            <li class="form__list">
+                <label for="state"></label>
+                <input type="text" class="input register__input" id="state" name="state" placeholder="State" value="" required />
+            </li>
+
+            <li class="form__list">
+                <label for="username"></label>
+                <input type="text" class="input register__input" id="username" name="username" placeholder="Username" value="" required />
+            </li>
+           
+            <li class="form__list">
+                <label for="password"></label>
+                <input type="password" class="input register__input" id="password" name="password" placeholder="Password" value="" required />
+            </li>
+
+            <li class="form__list">
+                <label for="password"></label>
+                <input type="password" class="input register__input" id="password" name="password" placeholder="Confirm password" value="" required />
+            </li>
+
+            <li class="form__list">
+                <input type="submit" id="register-submit" name="submit"  alt="submit" value="Submit" />
+            </li>
+        </ul>
+    </form>
+</div>
+</main>
 </body>
 </html>
